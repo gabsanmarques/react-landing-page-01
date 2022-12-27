@@ -107,6 +107,35 @@
   }
 }
 
+.client-logo:hover {
+  -webkit-animation: glow-up 0.3s ease-in-out;
+  animation: glow-up 0.3s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;  
+}
+
+@-webkit-keyframes glow-up {
+  0% {
+    -webkit-filter: brightness(0%);
+    filter: brightness(0%);
+  }
+  100% {
+    -webkit-filter: brightness(1000%);
+    filter: brightness(1000%);
+  }
+}
+
+@keyframes glow-up {
+  0% {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
+  100% {
+    -webkit-filter: brightness(1000%);
+    filter: brightness(1000%);
+  }
+}
+
 .feature-card:hover {
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
